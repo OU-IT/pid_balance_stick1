@@ -14,18 +14,7 @@
 
 > 电调电源建议与 MCU 隔离，共地。
 
-## 文件结构
-
-text
-
-main.c                  主程序、SysTick、TIM3、控制主循环
-motor.c / motor.h       PWM 初始化与电机速度控制
-mpu6050.c / mpu6050.h   MPU6050 驱动、角度转换、零偏校准
-pid.c / pid.h           PID 控制器
-kalman.c / kalman.h     一维卡尔曼滤波
-uart.c / uart.h         USART1 初始化与 printf 封装
-i2c.c / i2c.h           I2C1 底层读写
-delay.c / delay.h       软件延时
+# 
 
 ## 使用说明
 
@@ -73,5 +62,3 @@ text
 4. 电调需设置为双向模式。
 
 5. 角度正负、`expect`、前馈方向与传感器安装有关，需实际调试。
-
-6. 螺旋桨高速旋转，调试务必注意安全。
